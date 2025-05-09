@@ -1,5 +1,16 @@
 function findPartner(customer, candidates) {
-  //write your code here
+  const matchingCandidates = candidates.filter(candidate =>
+    candidate.favoriteGenre === customer.favoriteGenre &&
+    candidate.hobbies.some(hobby => customer.hobbies.includes(hobby))
+  );
+
+  if (matchingCandidates.length === 0) {
+    return null;
+  }
+
+  return matchingCandidates.reduce((youngest, current) => 
+    current.age < youngest.age ? current : youngest
+  );
 }
 
 module.exports = findPartner

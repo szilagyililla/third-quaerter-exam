@@ -1,5 +1,5 @@
 function palindromeArray(array) {
-  //write your code here
+  return array.every((item, index) => item === array[array.length - 1 - index])
 }
 
 module.exports = palindromeArray

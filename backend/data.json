@@ -31,5 +31,21 @@
       "Ördög",
       "Kismacska"
     ]
+  },
+  {
+    "id": 5,
+    "name": "Lilla",
+    "age": 21,
+    "pets": [
+      "kata"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Muki",
+    "age": 22,
+    "pets": [
+      "jhdhs"
+    ]
   }
 ]
